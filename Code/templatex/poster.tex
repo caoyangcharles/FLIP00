@@ -53,10 +53,10 @@
 \colorlet{backgroundcolor}{blue!10}
 
  % Title, Author, Institute
-\title{Group Outlying Aspects Mining}
-\author{Shaoni Wang$^1$, Gang Li$^2$}
-\institute{$^1$ Xi'an Shiyou University, China \\
-	$^2$ Deakin University, Australia
+\title{PUBG Game Data Analysis and prediction
+}
+\author{Yang Cao}
+\institute{Deakin University, Australia
 }
 %\titlegraphic{logos/tulip-logo.eps}
 
@@ -96,37 +96,27 @@
 
 %%%%%%%%%% -------------------------------------------------------------------- %%%%%%%%%%
 \block{Introduction}{
-    Many real world applications call for one important function
-    of identifying the set of features
-    on which the interested object is most distinguished from others.
-    Usually,
-    this object is termed as the query object,
-    and the set of features are referred to as the \emph{subspaces} or \emph{aspects}.
-    Accordingly,
-    this research problem is referred to as
-    \emph{outlying aspects mining},
-    which is different from \emph{outlier detection}.
+    In a PUBG game, up to 100 players start in each match (matchId). Players can be on teams (groupId) which get ranked at the end of the game
+    (winPlacePerc) based on how many other teams are still alive when they
+    are eliminated. In game, players can pick up different munitions, revive
+    downed-but-not-out (knocked) teammates, drive vehicles, swim, run, shoot,
+    and experience all of the consequences – such as falling too far or running
+    themselves over and eliminating themselves. Different game behaviors will
+    lead to different final rankings, so the main purpose is to build a model to
+    predicts players’ finishing placement based on their final stats, on a scale
+    from 1 (first place) to 0 (last place).
   	
   	\begin{description}
-  	\item[Outlying Aspects Mining] aims to identify a subspace
-    which makes the query object most outlying,
-    rather than verifying whether it is an outlier or not.
-    The task of \emph{Outlying Aspects Mining}
-    is to explain which aspects make the query object most different.
+  	\item[PUBG Game Data Analysis] aims to make A game team data know which game actions that
+    make game teams get higher rank than others
   	
-  	\item[Outlier Detection] aims to identify all possible outliers in the dataset,
-    without explaining why or how they are different.
+  	\item[PUBG win place prediction] aims to help Players can also estimate their final ranking based on the current situation and make strategic decisions in advance (such as running away or
+    fighting)
     Hence,
     the outlying aspects mining is also referred to
     \emph{outlier interpretation}
     or \emph{object explanation}.
   	\end{description}
-
-  	In this paper,
-    we extend the task of \emph{outlying aspects mining} to the \emph{group} level,
-    formalize the research problem of \emph{group outlying aspects mining},
-    and propose a novel algorithm named GOAM to solve the
-    \emph{group outlying aspects mining} problem.
 }
 %%%%%%%%%% -------------------------------------------------------------------- %%%%%%%%%%
 
