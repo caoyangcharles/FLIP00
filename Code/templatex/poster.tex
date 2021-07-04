@@ -122,48 +122,48 @@
 
 
 %%%%%%%%%% -------------------------------------------------------------------- %%%%%%%%%%
-\block{Group Outlying Aspects Mining}{
+\block{Description and evaluation}{
 \begin{itemize}
     \item
     %\emph{Group Outlying Aspects Mining}
-    It aims to \emph{identify a subset of aspects (or subspace)
-    which makes the query group, rather than the single object,
-    obviously different}.
-    What we are interested in the task of \emph{group outlying aspects mining}
-    is to explain which aspects make the query group distinctive
-    different from the other groups.
+    Use Mean Square Error to evaluate model (the average squared difference between the estimated
+    values and the actual value)
+    \item 
+    Train data MSE
+    \item 
+    Test Data MSE
 
-    \item
-    \emph{Group Outlying Aspects Mining},
-    \emph{Outlying Aspects Mining} and
-    \emph{Outlier Detection} are different with each other.
+    % \item
+    % \emph{Group Outlying Aspects Mining},
+    % \emph{Outlying Aspects Mining} and
+    % \emph{Outlier Detection} are different with each other.
 \end{itemize}
 
-\begin{center}
-    \begin{minipage}{0.3\linewidth}
-    \centering
-    \begin{tikzfigure}
-    \missingfigure[figcolor=white]{Testing figcolor}
-    {\small{Group Outlying Aspects Mining}}
-    \end{tikzfigure}%
-    \end{minipage}
-    \hfill
-    \begin{minipage}{0.3\linewidth}
-    \centering
-    \begin{tikzfigure}
-    \missingfigure[figcolor=white]{Testing figcolor}
-    {\small{Outlying Aspects Mining}}
-    \end{tikzfigure}%
-    \end{minipage}
-    \hfill
-    \begin{minipage}{0.3\linewidth}
-    \centering
-    \begin{tikzfigure}
-    \missingfigure[figcolor=white]{Testing figcolor}
-    {\small{Outlier Detection}}
-    \end{tikzfigure}%
-    \end{minipage}
-\end{center}
+% \begin{center}
+%     \begin{minipage}{0.3\linewidth}
+%     \centering
+%     \begin{tikzfigure}
+%     \missingfigure[figcolor=white]{Testing figcolor}
+%     {\small{Group Outlying Aspects Mining}}
+%     \end{tikzfigure}%
+%     \end{minipage}
+%     \hfill
+%     \begin{minipage}{0.3\linewidth}
+%     \centering
+%     \begin{tikzfigure}
+%     \missingfigure[figcolor=white]{Testing figcolor}
+%     {\small{Outlying Aspects Mining}}
+%     \end{tikzfigure}%
+%     \end{minipage}
+%     \hfill
+%     \begin{minipage}{0.3\linewidth}
+%     \centering
+%     \begin{tikzfigure}
+%     \missingfigure[figcolor=white]{Testing figcolor}
+%     {\small{Outlier Detection}}
+%     \end{tikzfigure}%
+%     \end{minipage}
+% \end{center}
 }
 %%%%%%%%%% -------------------------------------------------------------------- %%%%%%%%%%
 
@@ -179,65 +179,64 @@
 
 
 %%%%%%%%%% -------------------------------------------------------------------- %%%%%%%%%%
-\block{GOAM Algorithm}{
-  	We propose the \emph{GOAM} algorithm to solve the research problem of
-    \emph{Group Outlying Aspects Mining}.
-  	The \emph{GOAM} algorithm includes three major steps.
+\block{Data Visualization}{
+  	We propose the use data visualization technique to show the game types proportion and the relationship between 
+    walking distance and win place.
 %    1) Group Feature Extraction,
 %    2) Outlying Degree Scoring, and
 %    3) Outlying Aspects Identification.
   	
-\begin{tikzfigure}%[Overall architecture of \emph{GOAM} algorithm]
-%  \includegraphics[width=0.8\linewidth]{figures//framework.pdf}
-    \missingfigure[figcolor=white]{Testing figcolor}
-\end{tikzfigure}
+% \begin{tikzfigure}%[Overall architecture of \emph{GOAM} algorithm]
+% %  \includegraphics[width=0.8\linewidth]{figures//framework.pdf}
+%     \missingfigure[figcolor=white]{Testing figcolor}
+% \end{tikzfigure}
 		
-\begin{description}
-  	\item[Group Feature Extraction]
-  	Let $f_1$, $f_2$, $f_3$ represent three features of $G_q$.
-    We count the frequency of each value for one feature.
-    Then use the histogram to represent each feature.
-    Similarly,
-    we can extract other features for each group.
+% \begin{description}
+%   	\item[Group Feature Extraction]
+%   	Let $f_1$, $f_2$, $f_3$ represent three features of $G_q$.
+%     We count the frequency of each value for one feature.
+%     Then use the histogram to represent each feature.
+%     Similarly,
+%     we can extract other features for each group.
 
-%    \item
-%    The histogram of $G_q$ on three features are as follows.
-\end{description}
+% %    \item
+% %    The histogram of $G_q$ on three features are as follows.
+% \end{description}
 
-\begin{center}
-    \begin{minipage}{0.3\linewidth}
-    \centering
-    \begin{tikzfigure}
-    \missingfigure[figcolor=white]{Testing figcolor}
-    {\small{Histogram of $G_q$ on $f_1$}}
-    \end{tikzfigure}%
-    \end{minipage}
-    \hfill
-    \begin{minipage}{0.3\linewidth}
-    \centering
-    \begin{tikzfigure}
-    \missingfigure[figcolor=white]{Testing figcolor}
-    {\small{Histogram of $G_q$ on $f_2$}}
-    \end{tikzfigure}%
-    \end{minipage}
-    \hfill
-    \begin{minipage}{0.3\linewidth}
-    \centering
-    \begin{tikzfigure}
-    \missingfigure[figcolor=white]{Testing figcolor}
-    {\small{Histogram of $G_q$ on $f_3$}}
-    \end{tikzfigure}%
-    \end{minipage}
-\end{center}
-\begin{description}
-\item[Outlying Degree Scoring]
-    In this step,
-    we first calculate the \emph{earth mover distance} (EMD) of one feature among different groups.
-    The earth mover distance reflects the minimum mean distance
-    between groups on one feature.
-    So,
-    we utilize the EMD to measure the difference between groups of each feature.
-\end{description}
+% \begin{center}
+%     \begin{minipage}{0.3\linewidth}
+%     \centering
+%     \begin{tikzfigure}
+%     \missingfigure[figcolor=white]{Testing figcolor}
+%     {\small{Histogram of $G_q$ on $f_1$}}
+%     \end{tikzfigure}%
+%     \end{minipage}
+%     \hfill
+%     \begin{minipage}{0.3\linewidth}
+%     \centering
+%     \begin{tikzfigure}
+%     \missingfigure[figcolor=white]{Testing figcolor}
+%     {\small{Histogram of $G_q$ on $f_2$}}
+%     \end{tikzfigure}%
+%     \end{minipage}
+%     \hfill
+%     \begin{minipage}{0.3\linewidth}
+%     \centering
+%     \begin{tikzfigure}
+%     \missingfigure[figcolor=white]{Testing figcolor}
+%     {\small{Histogram of $G_q$ on $f_3$}}
+%     \end{tikzfigure}%
+%     \end{minipage}
+% \end{center}
+% \begin{description}
+% \item[Outlying Degree Scoring]
+%     In this step,
+%     we first calculate the \emph{earth mover distance} (EMD) of one feature among different groups.
+%     The earth mover distance reflects the minimum mean distance
+%     between groups on one feature.
+%     So,
+%     we utilize the EMD to measure the difference between groups of each feature.
+% \end{description}
 }
 %%%%%%%%%% -------------------------------------------------------------------- %%%%%%%%%%
 
@@ -247,20 +246,18 @@
  %Second column with first block's top edge aligned with with previous column's top.
 
 %%%%%%%%%% -------------------------------------------------------------------- %%%%%%%%%%
-\block{GOAM Algorithm}{
+\block{Data Preprocess}{
 \begin{description}
     \item
-    Second,
-    based on the \emph{earth move distance},
-    we calculate the outlying degree.
+    We remove all the rows which has missing values or NaN values.
 \end{description}
 
-\begin{tikzfigure}%[Overall architecture of \emph{GOAM} algorithm]
-    \missingfigure[figcolor=white]{Testing figcolor}
-\end{tikzfigure}
-  where $G_q$ is the query group,
-  $n$ is the number of compare groups,
-  and $h_{k_s}$ is the histogram representation of $G_k$ in the subspace $s$.
+% \begin{tikzfigure}%[Overall architecture of \emph{GOAM} algorithm]
+%     \missingfigure[figcolor=white]{Testing figcolor}
+% \end{tikzfigure}
+%   where $G_q$ is the query group,
+%   $n$ is the number of compare groups,
+%   and $h_{k_s}$ is the histogram representation of $G_k$ in the subspace $s$.
 
 \begin{description}
   	\item[Outlying Aspects Identification]
@@ -359,15 +356,11 @@ lower \{free throw percentage\}, \{free throws attempted\}.
 {Conclusion}
 {
 \begin{description}
-  \item[Problem Definition]
-  Formalize the problem of Group Outlying Aspects Mining by extending outlying aspects mining.
+  \item Both training and testing data shows that linear model get lower mean square error
+  value.
+  \item Most players choose to play squad-fpp and duo-fpp
 
-  \item[GOAM algorithm]
-  Propose GOAM algorithm to solve the \emph{Group}\\
-  \emph{Outlying Aspects Mining} problem.
-
-  \item[Strategies]
-  Utilize the pruning strategies to \\ reduce time complexity.
+  \item More walking distance always can bring higher win place
 \end{description}
 }
 %%%%%%%%%% -------------------------------------------------------------------- %%%%%%%%%%
