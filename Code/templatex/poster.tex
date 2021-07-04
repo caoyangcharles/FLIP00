@@ -260,15 +260,16 @@
 %   and $h_{k_s}$ is the histogram representation of $G_k$ in the subspace $s$.
 
 \begin{description}
-  	\item[Outlying Aspects Identification]
-    In this step,
-    based on the value of outlying degree
-    we will identify the group outlying aspects.
-    If a feature's outlying degree is greater than a threshold,
-    the more likely the feature is group outlying aspect.
-    When the dimensionality of features is high,
-    we adopt a stage-wise candidate subspace construction strategy to
-    alleviate the exponential explosion.
+  	\item[Train Dataset description]
+    There are 4446966 rows and 29
+    columns.
+    4446966 unique ID.
+    2026745 unique groupId
+    \item [Test Dataset description]
+    There are 1934174 rows and 28
+    columns.
+    1934174 unique ID
+    886238 unique groupId
 \end{description}
 }
 %%%%%%%%%% -------------------------------------------------------------------- %%%%%%%%%%
@@ -276,76 +277,60 @@
 
 
 %%%%%%%%%% -------------------------------------------------------------------- %%%%%%%%%%
-\block[titleleft]{Experiment}
+\block[titleleft]{Feature and model selection}
 {
 \begin{description}
-  	\item[Synthetic Dataset] contains $10$ groups and $8$ features.
-    Each group consists of $10$ members,
-    and each member has $8$ features.
+  	\item[Linear regression], use grid search to look for best parameters.
 \end{description}
 \vspace{.5cm}
-\begin{tabular}{ c | c | c | c }
+\begin{tabular}{ c | c | c  }
     \toprule
-    Method     &  Truth Outlying Aspects    & Identified Aspects & Accuracy      \\
+    Parameters     &  Values    & CV     \\
     \midrule
-    GOAM       &  $\{F_1\}$, $\{F_2F_4\}$   &  $\{F_1\}$, $\{F_2F_4\}$    & 100\%    \\
+    fit_intercept       &  True/False  &  3       \\
 
-     Arithmetic Mean based OAM &  $\{F_1\}$, $\{F_2F_4\}$   &  $\{F_4\}$, $\{F_2\}$    &  0\% \\
-
-     Median based OAM &  $\{F_1\}$, $\{F_2F_4\}$   &  $\{F_2\}$, $\{F_4\}$    &           0\% \\
+     normalize &  True/False   &  3     \\
      \bottomrule
 \end{tabular}
 \vspace{.2cm}
 \begin{description}
     \item
-    It can be observed that the GOAM method can identify the trivial outlying features
-    and non-trivial outlying subspaces correctly and is obvious from the table
-    that the accuracy of GOAM is the best, which is ($100\%$).
-\end{description}
-
-\begin{description}
-\item[NBA Dataset] was collected from Yahoo Sports
-website (\url{http://sports.yahoo.com.cn/nba}).
-The data include all teams from the six divisions,
-and each player in the team has $12$ features.
+    [Decision Tree], use grid search to look for best parameters.
 \end{description}
 \vspace{.5cm}
 \begin{tabular}{ c | c | c }
     \toprule
-    Teams                   & Trivial Outlying Aspects  & NonTrivial Outlying Aspects    \\
-    \toprule
-    Cleveland Cavaliers     & \{3FA\}                   & \{FGA, FT\%\}, \{FGA, FG\%\} \\
-    Orlando Magic           & \{Stl\}                   & None                         \\
-    Milwaukee Bucks         & \{To\}, \{FTA\}           & \{FGA, FTA\}, \{3FA, FTA\}     \\
-%    Golden State Warriors   & \{FG\%\}                  & \{FT\%, Blk\}, \{FGA, 3PT\%, FTA\}\\
-%    Utah Jazz               & \{Blk\}                   & \{3FA, 3PT\%\}                    \\
-    New Orleans Pelicans    & \{FT\%\}, \{FTA\}         & \{FTA, Stl\}, \{FTA, To\}          \\
+    Parameters     &  Values    & CV     \\
+    \midrule
+    criterion       &  "mse", "friedman_mse", "mae"   &  3       \\
+
+     min_samples_leaf &  1,2   &  3     \\
     \bottomrule
 \end{tabular}
            
-\begin{minipage}{0.5\linewidth}
-    \centering
-    \begin{tikzfigure}
-    \missingfigure[figcolor=white]{Testing figcolor}
+% \begin{minipage}{0.5\linewidth}
+%     \centering
+%     \begin{tikzfigure}
+%     \missingfigure[figcolor=white]{Testing figcolor}
 
-    {\small{New Orleans Pelicans on FT\%}}
-    \end{tikzfigure}%
-\end{minipage}
-\hfill
-\begin{minipage}{0.5\linewidth}
-    \centering
-    \begin{tikzfigure}
-    \missingfigure[figcolor=white]{Testing figcolor}
+%     {\small{New Orleans Pelicans on FT\%}}
+%     \end{tikzfigure}%
+% \end{minipage}
+% \hfill
+% \begin{minipage}{0.5\linewidth}
+%     \centering
+%     \begin{tikzfigure}
+%     \missingfigure[figcolor=white]{Testing figcolor}
 
-    {\small{New Orleans Pelicans on FTA}}
-    \end{tikzfigure}%
-\end{minipage}
-\vspace{.2cm}
-\begin{description}
-\item
-\texttt{New Orleans Pelicans} has more players with
-lower \{free throw percentage\}, \{free throws attempted\}.
-\end{description}
+%     {\small{New Orleans Pelicans on FTA}}
+%     \end{tikzfigure}%
+% \end{minipage}
+% \vspace{.2cm}
+% \begin{description}
+% \item
+% \texttt{New Orleans Pelicans} has more players with
+% lower \{free throw percentage\}, \{free throws attempted\}.
+% \end{description}
 }
 %%%%%%%%%% -------------------------------------------------------------------- %%%%%%%%%%
 
