@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6.28) (preloaded format=pdflatex 2021.7.3)  5 JUL 2021 05:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6.28) (preloaded format=pdflatex 2021.7.3)  5 JUL 2021 05:15
 entering extended mode
 **./poster.tex
 (poster.tex
@@ -1295,13 +1295,13 @@ Package rerunfilecheck Info: Checksums for `poster.out':
 Here is how much of TeX's memory you used:
  27739 strings out of 478847
  556986 string characters out of 2845507
- 1080910 words of memory out of 3000000
+ 1080912 words of memory out of 3000000
  45106 multiletter control sequences out of 15000+600000
  480686 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  117i,11n,122p,516b,1558s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/Charles Cao/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/kurier/rm-kurier.enc}{C:/Users/Charles Cao/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/kurier/mi-kurier.enc}{C:/Users/Charles Cao/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/kurier/ts1-kurier.enc}{C:/Users/Charles Cao/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/kurier/ec-kurier-sc.enc}{C:/Users/Charles Cao/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/kurier/ec-kurier.enc}<C:/Users/Charles Cao/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/kurier/kurierb.pfb><C:/Users/Charles Cao/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/kurier/kurierr.pfb><C:/Users/Charles Cao/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/kurier/kurierri.pfb>
-Output written on poster.pdf (1 page, 126696 bytes).
+Output written on poster.pdf (1 page, 126698 bytes).
 PDF statistics:
  96 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)
