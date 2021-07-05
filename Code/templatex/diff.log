@@ -1447,8 +1447,7 @@ File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
-
-No file diff.aux.
+ (diff.aux (bu.aux))
 \openout1 = `diff.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
@@ -1470,6 +1469,7 @@ LaTeX Font Info:    ... okay on input line 65.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 65.
 LaTeX Font Info:    ... okay on input line 65.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 65.
+
 
 (C:\Users\Charles Cao\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1505,12 +1505,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 65.
 LaTeX Info: Redefining \pageref on input line 65.
 LaTeX Info: Redefining \nameref on input line 65.
+ (diff.out) (diff.out)
 \@outlinefile=\write7
 \openout7 = `diff.out'.
-
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 LaTeX Info: Redefining \microtypecontext on input line 65.
 Package microtype Info: Generating DVI output.
@@ -1534,11 +1531,12 @@ nslations-basic-dictionary')
 Package translations Info: loading dictionary `translations-basic-dictionary' f
 or `english'. on input line 65.
 \c@lstlisting=\count414
- (abstract.tex)
+ (abstract.tex) (diff.toc)
 \tf@toc=\write8
 \openout8 = `diff.toc'.
 
- [1] (mainbody.tex
+
+[1] (mainbody.tex
 (C:\Users\Charles Cao\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.
 cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
@@ -1574,9 +1572,7 @@ Package fancyhdr Warning: \footskip is too small (12.0pt):
 
 
 No file diff.bbl.
-
-Package hyperref Warning: old tdo file detected, not used; run LaTeX again.
-
+(diff.tdo)
 \tf@tdo=\write9
 \openout9 = `diff.tdo'.
 
@@ -1585,7 +1581,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 File: logos/tulip-logo.eps Graphic file (type eps)
-<logos/tulip-logo.eps>
+ <logos/tulip-logo.eps>
 
 Package fancyhdr Warning: \footskip is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.79996pt, for example:
@@ -1603,16 +1599,16 @@ Package rerunfilecheck Warning: File `diff.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `diff.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  3FE0FF49E6016BB24DCDBF44F189405C;573.
+(rerunfilecheck)             Before: 3FE0FF49E6016BB24DCDBF44F189405C;573
+(rerunfilecheck)             After:  A98DE0FC301A5A2F62A7CC0F18EDB2F9;688.
  ) 
 Here is how much of TeX's memory you used:
- 38379 strings out of 478848
- 763382 string characters out of 2845533
- 1221075 words of memory out of 3000000
- 55491 multiletter control sequences out of 15000+600000
+ 38397 strings out of 478848
+ 763675 string characters out of 2845533
+ 1224531 words of memory out of 3000000
+ 55497 multiletter control sequences out of 15000+600000
  410118 words of font info for 54 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  122i,12n,134p,439b,859s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on diff.dvi (4 pages, 24380 bytes).
+Output written on diff.dvi (4 pages, 26248 bytes).
