@@ -53,107 +53,108 @@ from 1 (first place) to 0 (last place).
 
 %\todo{The problems faced by most current methods}
 %\blindtext
-\todo{What is the specific problem considered in this paper?}
-This paragraph narrows down the topic area of the paper. 
-In the first paragraph you have established general context and importance. 
-Here you establish specific context and background.
+% \todo{What is the specific problem considered in this paper?}
+% This paragraph narrows down the topic area of the paper. 
+% In the first paragraph you have established general context and importance. 
+% Here you establish specific context and background.
 
 %\todo{What can be addressed by existing methods; Why those problems are challenges to existing methods?}
 %\blindtext
-\todo{Contribution}
-"In this paper, we show that ...". 
-This is the key paragraph in the intro - you summarize, 
-in one paragraph, 
-what are the main contributions of your paper given the context 
-you have established in paragraphs 1 and 2. 
-What is the general approach taken? 
-Why are the specific results significant? 
-This paragraph must be really good. 
+% \todo{Contribution}
+In this paper, we show that how to use the different game actions to predict the final win places. It can 
+help game player to get higher rank and help game data analyst to get higher correlation actions to help prefessional player
+to get better win places in the competiton.
+% This is the key paragraph in the intro - you summarize, 
+% in one paragraph, 
+% what are the main contributions of your paper given the context 
+% you have established in paragraphs 1 and 2. 
+% What is the general approach taken? 
+% Why are the specific results significant? 
+% This paragraph must be really good. 
 
-You should think about how to structure these one or 
-two paragraph summaries of what your paper is all about. 
-If there are two or three main results, 
-then you might consider itemizing them with bullets or in test. 
+% You should think about how to structure these one or 
+% two paragraph summaries of what your paper is all about. 
+% If there are two or three main results, 
+% then you might consider itemizing them with bullets or in test. 
 \begin{itemize}
 	\item e.g., First ...
 	\item e.g., Second ...
 	\item e.g., Third ...
 \end{itemize}
-If the results fall broadly into two categories, 
-you can bring out that distinction here. 
-For example, "Our results are both theoretical and applied in nature. 
-(two sentences follow, one each on theory and application)"
+% If the results fall broadly into two categories, 
+% you can bring out that distinction here. 
+% For example, "Our results are both theoretical and applied in nature. 
+% (two sentences follow, one each on theory and application)"
 
 %\todo{What provides the motivation of this work? What are the research issues? What is the rationale of this work? }
 %\blindtext
-\todo{At a high level what are the differences in what you are doing, and what others have done? }
-Keep this at a high level, 
-you can refer to a future section where specific details and differences will be given. 
-But it is important for the reader to know at a high level, 
-what is new about this work compared to other work in the area.
+% \todo{At a high level what are the differences in what you are doing, and what others have done? }
+% Keep this at a high level, 
+% you can refer to a future section where specific details and differences will be given. 
+% But it is important for the reader to know at a high level, 
+% what is new about this work compared to other work in the area.
 
-%\todo{What we have done and what are the contributions.}
-%\blindtext
-\todo{A roadmap for the rest of the paper}
-"The remainder of this paper is structured as follows..." 
-Give the reader a roadmap for the rest of the paper. 
-Avoid redundant phrasing, 
-"In Section 2, In section 3, ... In Section 4, ... " etc.
+% %\todo{What we have done and what are the contributions.}
+% %\blindtext
+% \todo{A roadmap for the rest of the paper}
+The remainder of this paper is structured as follows: In Section 2, data preprocess will remove all the missing value.
+In section 3, data visualizaiton will show the different game type proportion and relationship between two attributes.
+In Section 4, use linear regression and decision tree to build model and predict.
 
-\gangli{A few general tips:
-Don't spend a lot of time into the introduction 
-telling the reader about what you don't do in the paper. 
-Be clear about what you do do.
-Does each paragraph have a theme sentence that sets the stage for the entire paragraph? Are the sentences and topics in the paragraph all related to each other?}
+% \gangli{A few general tips:
+% Don't spend a lot of time into the introduction 
+% telling the reader about what you don't do in the paper. 
+% Be clear about what you do do.
+% Does each paragraph have a theme sentence that sets the stage for the entire paragraph? Are the sentences and topics in the paragraph all related to each other?}
 
-\gangli{Does each paragraph have a theme 
-sentence that sets the stage for the entire paragraph? 
-Are the sentences and topics in the paragraph all related to each other?}
+% \gangli{Does each paragraph have a theme 
+% sentence that sets the stage for the entire paragraph? 
+% Are the sentences and topics in the paragraph all related to each other?}
 
-\gangli{Do all of your tenses match up in a paragraph?}
+% \gangli{Do all of your tenses match up in a paragraph?}
 
-Test citation~\cite{BL12J01}. 
-\begin{JournalOnly}
-and~\citep{BJL11J01} or~\citet{BJL11J01}.
-\end{JournalOnly}
+% Test citation~\cite{BL12J01}. 
+% \begin{JournalOnly}
+% and~\citep{BJL11J01} or~\citet{BJL11J01}.
+% \end{JournalOnly}
 
-This is for~\cref{tbl:overall-experiments}, 
-\todo[fancyline]{Testing.}
-and this is for~\cref{sec-conclusions}.
-\todo[noline]{A note with no line back to the text.}%
-\gangli{This is comment from Gang.}
-\qwu{Response from QW}
+% This is for~\cref{tbl:overall-experiments}, 
+% \todo[fancyline]{Testing.}
+% and this is for~\cref{sec-conclusions}.
+% \todo[noline]{A note with no line back to the text.}%
+% \gangli{This is comment from Gang.}
+% \qwu{Response from QW}
 
-Number:
-\num{123}.
-\numlist{10;30;50;70},
-\numrange{10}{30},
-\SIlist{10;30;45}{\metre},
-and
-\SI{10}{\percent}
+% Number:
+% \num{123}.
+% \numlist{10;30;50;70},
+% \numrange{10}{30},
+% \SIlist{10;30;45}{\metre},
+% and
+% \SI{10}{\percent}
 
-\missingfigure[figcolor=white]{Testing figcolor}
-
-
-\begin{ConferenceOnly}
-We have \SI{10}{\hertz},
-\si{\kilogram\metre\per\second},
-the range: \SIrange{10}{100}{\hertz}.
-$\nicefrac[]{1}{2}$.
-
-\missingfigure{Make a sketch of the structure of a trebuchet.}
-
-\end{ConferenceOnly}
+% \missingfigure[figcolor=white]{Testing figcolor}
 
 
-For~\cref{eq:test},
-as shown below:
+% \begin{ConferenceOnly}
+% We have \SI{10}{\hertz},
+% \si{\kilogram\metre\per\second},
+% the range: \SIrange{10}{100}{\hertz}.
+% $\nicefrac[]{1}{2}$.
 
-\begin{equation}\label{eq:test}
-a = b \times \sqrt{ab}
-\end{equation}
+% \missingfigure{Make a sketch of the structure of a trebuchet.}
 
-\blindmathpaper
+% \end{ConferenceOnly}
+
+
+% For~\cref{eq:test},
+% as shown below:
+
+% \begin{equation}\label{eq:test}
+% a = b \times \sqrt{ab}
+% \end{equation}
+
+% \blindmathpaper
 
 \section{Preliminaries} \label{sec-preliminaries}
 
