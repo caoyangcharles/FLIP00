@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6.28) (preloaded format=latex 2021.7.5)  5 JUL 2021 15:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6.28) (preloaded format=latex 2021.7.5)  5 JUL 2021 15:29
 entering extended mode
 **./diff.tex
 (diff.tex
@@ -1665,6 +1665,9 @@ Package fancyhdr Warning: \footskip is too small (12.0pt):
 
 
 No file diff.bbl.
+
+Package hyperref Warning: old tdo file detected, not used; run LaTeX again.
+
 \tf@tdo=\write9
 \openout9 = `diff.tdo'.
 
@@ -1703,10 +1706,10 @@ Package rerunfilecheck Info: Checksums for `diff.out':
 Here is how much of TeX's memory you used:
  38658 strings out of 478848
  769610 string characters out of 2845533
- 1427955 words of memory out of 3000000
+ 1428007 words of memory out of 3000000
  55766 multiletter control sequences out of 15000+600000
  410418 words of font info for 55 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  122i,13n,134p,640b,978s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on diff.dvi (6 pages, 85916 bytes).
+Output written on diff.dvi (6 pages, 86628 bytes).

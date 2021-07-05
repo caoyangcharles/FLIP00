@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6.28) (preloaded format=latex 2021.7.5)  5 JUL 2021 14:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6.28) (preloaded format=latex 2021.7.5)  5 JUL 2021 15:28
 entering extended mode
 **./modify.tex
 (modify.tex
@@ -1664,10 +1664,10 @@ Package rerunfilecheck Info: Checksums for `modify.out':
 Here is how much of TeX's memory you used:
  37219 strings out of 478848
  749186 string characters out of 2845533
- 1404552 words of memory out of 3000000
+ 1404604 words of memory out of 3000000
  54344 multiletter control sequences out of 15000+600000
  410312 words of font info for 54 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  122i,13n,134p,642b,977s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on modify.dvi (6 pages, 84788 bytes).
+Output written on modify.dvi (6 pages, 85496 bytes).

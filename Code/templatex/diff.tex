@@ -1,7 +1,7 @@
 \documentclass{amsart}
 %DIF LATEXDIFF DIFFERENCE FILE
 %DIF DEL report.tex   Sat Jul  3 22:11:43 2021
-%DIF ADD modify.tex   Mon Jul  5 14:49:11 2021
+%DIF ADD modify.tex   Mon Jul  5 15:28:00 2021
 \synctex=1
 
 %=================================================================
@@ -66,7 +66,8 @@
 %
 %=================================================================
 %
-\title[A Short Running Title]{\DIFdelbegin \DIFdel{Title of This Paper}\DIFdelend \DIFaddbegin \DIFadd{PUBG game data analysis and prediction}\DIFaddend }%
+\DIFdelbegin %DIFDELCMD < \title[A Short Running Title]{%%%
+\DIFdel{Title of This Paper}\DIFdelend \DIFaddbegin \title[PUBG game data analysis and prediction]{\DIFadd{PUBG game data analysis and prediction}\DIFaddend }%
 
 \DIFdelbegin %DIFDELCMD < \author{Author 1}
 %DIFDELCMD < \address[A.~1]{School of Computer Science,\\ 
@@ -84,7 +85,7 @@
 Deakin University, Geelong, VIC 3216, Australia}%
 \DIFdelbegin %DIFDELCMD < \email[A.~2]{gang.li@deakin.edu.au}
 %DIFDELCMD < %%%
-\DIFdelend \DIFaddbegin \email[A.~2]{caoyang@deakin.edu.au}
+\DIFdelend \DIFaddbegin \email[A.~2]{Yang Cao@deakin.edu.au}
 \DIFaddend 
 
 
@@ -101,8 +102,9 @@ Deakin University, Geelong, VIC 3216, Australia}%
 %DIF >  Vic 3125, Australia}%
 %DIF >  \email[A.~3]{xxx@deakin.edu.au}
 
-%\thanks{Thanks to \ldots}%
-\subjclass{Artificial Intelligence}%
+%DIF < \thanks{Thanks to \ldots}%
+\DIFaddbegin \thanks{Thanks to all members of TULIP\ldots}%DIF > 
+\DIFaddend \subjclass{Artificial Intelligence}%
 \date{\gitAuthorDate}%
 
 \input{abstract}
