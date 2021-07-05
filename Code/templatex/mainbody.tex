@@ -76,11 +76,11 @@ to get better win places in the competiton.
 % two paragraph summaries of what your paper is all about. 
 % If there are two or three main results, 
 % then you might consider itemizing them with bullets or in test. 
-\begin{itemize}
-	\item e.g., First ...
-	\item e.g., Second ...
-	\item e.g., Third ...
-\end{itemize}
+% \begin{itemize}
+% 	\item e.g., First ...
+% 	\item e.g., Second ...
+% 	\item e.g., Third ...
+% \end{itemize}
 % If the results fall broadly into two categories, 
 % you can bring out that distinction here. 
 % For example, "Our results are both theoretical and applied in nature. 
@@ -97,9 +97,9 @@ to get better win places in the competiton.
 % %\todo{What we have done and what are the contributions.}
 % %\blindtext
 % \todo{A roadmap for the rest of the paper}
-The remainder of this paper is structured as follows: In Section 2, data preprocess will remove all the missing value.
-In section 3, data visualizaiton will show the different game type proportion and relationship between two attributes.
-In Section 4, use linear regression and decision tree to build model and predict.
+The remainder of this paper is structured as follows: 
+In section 2, data visualizaiton will show the different game type proportion and relationship between two attributes.
+In Section 3, use linear regression and decision tree to build model and predict.
 
 % \gangli{A few general tips:
 % Don't spend a lot of time into the introduction 
@@ -156,53 +156,82 @@ In Section 4, use linear regression and decision tree to build model and predict
 
 % \blindmathpaper
 
-\section{Preliminaries} \label{sec-preliminaries}
+% \section{Data preprocess} \label{sec-preliminaries}
 
-\blindtext
+% \blindtext
 
-\gliMarker  %TODO: GLi Here
+% \gliMarker  %TODO: GLi Here
 
 
-\section{Method} \label{sec-method}
+\section{Data visualizaiton} \label{sec-method}
+\begin{itemize}
+  \item Figure 1 shows the different game type proportion of all matched games.
+  Most players choose to play squad fpp and duo fpp. So if players want to play with more players.
+  \item Figure 2 shows long walking distance always means higher rank because if a player move a lot and survive,
+  he always can get a higher rank. For players, if want to get higher win places, they need to keep moving.
+\end{itemize}
+\begin{figure}
+  \centering
+  % \selectcolormodel{rgb}
+  % \missingfigure{Testing a long text string.}
+  \includegraphics[width=1\textwidth]{scatter.eps}
+  \caption{walking distance VS Win Place} 
+  \label{scatter}
+\end{figure}
+\begin{figure}
+  \centering
+  % \selectcolormodel{rgb}
+  % \missingfigure{Testing a long text string.}
+  \includegraphics[width=1\textwidth]{pie.eps}
+  \caption{game type proportion} 
+  \label{pie}
+\end{figure}
+% \blindtext
+% \blindlist{itemize}[3]
+% \blinditemize
+% \blindenumerate
 
-\blindtext
-\blindlist{itemize}[3]
-\blinditemize
-\blindenumerate
+% \blindmathtrue
+% \blindmathfalse
+% \blinddescription
 
-\blindmathtrue
-\blindmathfalse
-\blinddescription
-
-\qwuMarker %TODO: QWu Here
+% \qwuMarker %TODO: QWu Here
 
 \section{Experiment and Analysis} \label{sec-experiment}
-
+\begin{itemize}
+  \item Base on table 1, we can see that linear regression model get lower MSE value, 
+  it means that it has a higher accuracy and lower error value between predictions and actuals.
+\end{itemize}
 
 \begin{table}  \centering
-  \caption{Precision Comparison on Event Detection Methods}
+  \caption{Precision Comparison}
   \label{tbl:overall-experiments}
   \begin{tabular}{cccc}
 \toprule
     % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
-    & OR Event Detection & AC Event Detection & TC Event Detection \\
+     & train MSE & test MSE \\
 \midrule
-    precision & 0.83 & 0.69 & 0.46 \\
-    recall & 0.68 & 0.48 & 0.36 \\
-    F-score & 0.747 & 0.57 & 0.4 \\
+    linear regression & 0.01564124116618947 & 0.015303007019988265
+    \\
+    decision tree & 0.01859312767771217 & 0.17048691321544765 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
 
 \section{Conclusions} \label{sec-conclusions}
+\begin{itemize}
+  \item Both training and testing data shows that linear model get lower mean square error
+  value.
+  \item Most players choose to play squad-fpp and duo-fpp
+  \item More walking distance always can bring higher win place.
+\end{itemize}
+% \blindtext
 
-\blindtext
+% \section*{Acknowledgement}
 
-\section*{Acknowledgement}
-
-\lipsum[1]
+% \lipsum[1]
 
 
-The authors would like to thank \ldots
+% The authors would like to thank \ldots
 
