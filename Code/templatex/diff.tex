@@ -1,0 +1,128 @@
+\documentclass{amsart}
+%DIF LATEXDIFF DIFFERENCE FILE
+%DIF DEL report.tex   Sat Jul  3 22:11:43 2021
+%DIF ADD modify.tex   Mon Jul  5 14:49:11 2021
+\synctex=1
+
+%=================================================================
+% 
+\newcount\DraftStatus  % 0 suppresses notes to selves in text
+\DraftStatus=1   % TODO: set to 0 for final version
+%=================================================================
+
+%=================================================================
+\usepackage{comment}
+%=================================================================
+%
+\includecomment{JournalOnly}  
+\includecomment{ConferenceOnly}  
+\includecomment{TulipStyle}
+%
+%=================================================================
+\input{preamble}
+
+
+%=================================================================
+%
+%DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF UNDERLINE PREAMBLE %DIF PREAMBLE
+\RequirePackage[normalem]{ulem} %DIF PREAMBLE
+\RequirePackage{color}\definecolor{RED}{rgb}{1,0,0}\definecolor{BLUE}{rgb}{0,0,1} %DIF PREAMBLE
+\providecommand{\DIFadd}[1]{{\protect\color{blue}\uwave{#1}}} %DIF PREAMBLE
+\providecommand{\DIFdel}[1]{{\protect\color{red}\sout{#1}}}                      %DIF PREAMBLE
+%DIF SAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddbegin}{} %DIF PREAMBLE
+\providecommand{\DIFaddend}{} %DIF PREAMBLE
+\providecommand{\DIFdelbegin}{} %DIF PREAMBLE
+\providecommand{\DIFdelend}{} %DIF PREAMBLE
+\providecommand{\DIFmodbegin}{} %DIF PREAMBLE
+\providecommand{\DIFmodend}{} %DIF PREAMBLE
+%DIF FLOATSAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddFL}[1]{\DIFadd{#1}} %DIF PREAMBLE
+\providecommand{\DIFdelFL}[1]{\DIFdel{#1}} %DIF PREAMBLE
+\providecommand{\DIFaddbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFaddendFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelendFL}{} %DIF PREAMBLE
+%DIF LISTINGS PREAMBLE %DIF PREAMBLE
+\RequirePackage{listings} %DIF PREAMBLE
+\RequirePackage{color} %DIF PREAMBLE
+\lstdefinelanguage{DIFcode}{ %DIF PREAMBLE
+%DIF DIFCODE_UNDERLINE %DIF PREAMBLE
+  moredelim=[il][\color{red}\sout]{\%DIF\ <\ }, %DIF PREAMBLE
+  moredelim=[il][\color{blue}\uwave]{\%DIF\ >\ } %DIF PREAMBLE
+} %DIF PREAMBLE
+\lstdefinestyle{DIFverbatimstyle}{ %DIF PREAMBLE
+	language=DIFcode, %DIF PREAMBLE
+	basicstyle=\ttfamily, %DIF PREAMBLE
+	columns=fullflexible, %DIF PREAMBLE
+	keepspaces=true %DIF PREAMBLE
+} %DIF PREAMBLE
+\lstnewenvironment{DIFverbatim}{\lstset{style=DIFverbatimstyle}}{} %DIF PREAMBLE
+\lstnewenvironment{DIFverbatim*}{\lstset{style=DIFverbatimstyle,showspaces=true}}{} %DIF PREAMBLE
+%DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
+
+\begin{document}
+%
+%=================================================================
+%
+\title[A Short Running Title]{\DIFdelbegin \DIFdel{Title of This Paper}\DIFdelend \DIFaddbegin \DIFadd{PUBG game data analysis and prediction}\DIFaddend }%
+
+\DIFdelbegin %DIFDELCMD < \author{Author 1}
+%DIFDELCMD < \address[A.~1]{School of Computer Science,\\ 
+%DIFDELCMD < Xi'an Shiyou University, Shaanxi 710065, China}%%%
+%DIF < 
+%DIFDELCMD < \email[A.~1]{xxx@tulip.academy}
+%DIFDELCMD < %%%
+\DIFdelend %DIF >  \author{Yang Cao}
+%DIF >  \address[A.~1]{School of Computer Science,\\ 
+%DIF >  Xi'an Shiyou University, Shaanxi 710065, China}%
+%DIF >  \email[A.~1]{xxx@tulip.academy}
+
+\author{\DIFdelbegin \DIFdel{Gang Li}\DIFdelend \DIFaddbegin \DIFadd{Yang Cao}\DIFaddend }
+\address[A.~2]{School of Information Technology \\
+Deakin University, Geelong, VIC 3216, Australia}%
+\DIFdelbegin %DIFDELCMD < \email[A.~2]{gang.li@deakin.edu.au}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \email[A.~2]{caoyang@deakin.edu.au}
+\DIFaddend 
+
+
+\DIFdelbegin %DIFDELCMD < \author{Author 3}
+%DIFDELCMD < \address[A.~3]{School of Information Technology \\
+%DIFDELCMD < Deakin University \\
+%DIFDELCMD < Vic 3125, Australia}%%%
+%DIF < 
+%DIFDELCMD < \email[A.~3]{xxx@deakin.edu.au}
+%DIFDELCMD < %%%
+\DIFdelend %DIF >  \author{Author 3}
+%DIF >  \address[A.~3]{School of Information Technology \\
+%DIF >  Deakin University \\
+%DIF >  Vic 3125, Australia}%
+%DIF >  \email[A.~3]{xxx@deakin.edu.au}
+
+%\thanks{Thanks to \ldots}%
+\subjclass{Artificial Intelligence}%
+\date{\gitAuthorDate}%
+
+\input{abstract}
+
+
+\maketitle
+\tableofcontents
+
+\newpage
+%=================================================================
+
+\input{mainbody}
+
+% ----------------------------------------------------------------
+\newpage
+\bibliography{tuliplab,yourbib}
+% TODO: you should change this yourbib into a proper bib file name
+\bibliographystyle{plainnat}
+%=================================================================
+
+\listoftodos
+
+\end{document}
