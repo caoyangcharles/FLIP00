@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6.28) (preloaded format=latex 2021.7.5)  5 JUL 2021 15:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6.28) (preloaded format=latex 2021.7.5)  5 JUL 2021 15:31
 entering extended mode
 **./diff.tex
 (diff.tex
@@ -1447,8 +1447,7 @@ File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
-
-No file diff.aux.
+ (diff.aux (bu.aux))
 \openout1 = `diff.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
@@ -1470,6 +1469,7 @@ LaTeX Font Info:    ... okay on input line 65.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 65.
 LaTeX Font Info:    ... okay on input line 65.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 65.
+
 
 (C:\Users\Charles Cao\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1505,12 +1505,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 65.
 LaTeX Info: Redefining \pageref on input line 65.
 LaTeX Info: Redefining \nameref on input line 65.
+ (diff.out) (diff.out)
 \@outlinefile=\write7
 \openout7 = `diff.out'.
-
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 LaTeX Info: Redefining \microtypecontext on input line 65.
 Package microtype Info: Generating DVI output.
@@ -1534,11 +1531,12 @@ nslations-basic-dictionary')
 Package translations Info: loading dictionary `translations-basic-dictionary' f
 or `english'. on input line 65.
 \c@lstlisting=\count414
- (abstract.tex)
+ (abstract.tex) (diff.toc)
 \tf@toc=\write8
 \openout8 = `diff.toc'.
 
- [1] (mainbody.tex
+
+[1] (mainbody.tex
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
 ine 6.
 Package microtype Info: Loading generic protrusion settings for font family
@@ -1600,14 +1598,6 @@ Package natbib Warning: Citation `BJL11J01' on page 2 undefined on input line 1
 
 )
 
-LaTeX Warning: Reference `tbl:overall-experiments' on page 1 undefined on input
- line 114.
-
-
-LaTeX Warning: Reference `sec-conclusions' on page 1 undefined on input line 11
-6.
-
-
 LaTeX Warning: Marginpar on page 2 moved.
 
 
@@ -1634,11 +1624,8 @@ Package fancyhdr Warning: \footskip is too small (12.0pt):
 (fancyhdr)                \setlength{\footskip}{14.79996pt}.
 
 [2]
-
-LaTeX Warning: Reference `eq:test' on page 1 undefined on input line 143.
-
 File: logos/tulip-logo.eps Graphic file (type eps)
-<logos/tulip-logo.eps>
+ <logos/tulip-logo.eps>
 
 Package fancyhdr Warning: \footskip is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.79996pt, for example:
@@ -1665,9 +1652,27 @@ Package fancyhdr Warning: \footskip is too small (12.0pt):
 
 
 No file diff.bbl.
+(diff.tdo
+Overfull \hbox (1544.74683pt too wide) in paragraph at lines 2--2
+ [][] [] [][]  
+ []
 
-Package hyperref Warning: old tdo file detected, not used; run LaTeX again.
 
+Overfull \hbox (76.0785pt too wide) in paragraph at lines 6--6
+ [][] [] [][]  
+ []
+
+
+Overfull \hbox (1010.69049pt too wide) in paragraph at lines 8--8
+ [][] [] [][]  
+ []
+
+
+Overfull \hbox (350.93968pt too wide) in paragraph at lines 9--9
+ [][] [] [][]  
+ []
+
+)
 \tf@tdo=\write9
 \openout9 = `diff.tdo'.
 
@@ -1675,6 +1680,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+
 
 Package natbib Warning: There were undefined citations.
 
@@ -1689,9 +1695,6 @@ Package fancyhdr Warning: \footskip is too small (12.0pt):
 No complaints by nag.
 (diff.aux (bu.aux))
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
@@ -1700,16 +1703,16 @@ Package rerunfilecheck Warning: File `diff.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `diff.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D4D64DE70B50DA8A9F33FE27946FFC36;756.
+(rerunfilecheck)             Before: D4D64DE70B50DA8A9F33FE27946FFC36;756
+(rerunfilecheck)             After:  C80877CC38F4F3F24A98D85D688CDF61;872.
  ) 
 Here is how much of TeX's memory you used:
- 38658 strings out of 478848
- 769610 string characters out of 2845533
- 1428007 words of memory out of 3000000
- 55766 multiletter control sequences out of 15000+600000
- 410418 words of font info for 55 fonts, out of 8000000 for 9000
+ 38681 strings out of 478848
+ 769972 string characters out of 2845533
+ 1430675 words of memory out of 3000000
+ 55776 multiletter control sequences out of 15000+600000
+ 410723 words of font info for 56 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  122i,13n,134p,640b,978s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on diff.dvi (6 pages, 86628 bytes).
+Output written on diff.dvi (6 pages, 103600 bytes).
